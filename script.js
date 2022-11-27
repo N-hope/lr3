@@ -8,7 +8,7 @@ function T(){
 		
 		var DateHuman = new Date(table.rows[i].cells[1].innerHTML);
 		var y = parseInt(((now-DateHuman)/1000/3600/24/365));
-		var D = new Date(table.rows[i].cells[2].innerHTML += y + " років");
+		var D = new Date(table.rows[i].cells[2].innerHTML = y + " років");
 		console.log(pib +" "+ y);
 	}
 }
