@@ -3,38 +3,22 @@
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>I-Tех</title>
-<!--  <link rel="stylesheet" href="style.css">-->
   <script language="JavaScript">
-    var now = new Date();
-/*	var d1 = new Date(2007, 8, 27);
-	var y = ((now-d1)/3600/24/1000);
-	alert( y +"days or " +(y/12)+ " month");*/
-/*	function alerts(){alert( y );}	*/
-	/*function time(){
-	  document.write("рік "+ dat.getDate() + dat.getMonth() + dat.getFullYear() + "\t");
-	  a=dat.getFullYear()-d;
-	  document.write('\n'+"років"+'\n');
-	}();*/
+/*function T(){
+  var now = new Date();
+  var pib = "";
+  var table = document.body.children[3];
+  for(var i=1; i<6; i++){
+    var people=table.rows[i].cells[0].innerHTML;
+	pib= people;
 	
-/*var table = document.body.children[3];
-alert(table.rows[1].cells[1].innerHTML);
+	var DateHuman = new Date(table.rows[i].cells[1].innerHTML);
+	var y = ((now-DateHuman)/1000/3600/24/365);
+	var D = new Date(table.rows[i].cells[2].innerHTML += Number(y) + " років");
+	console.log(pib +" "+ y);
+  }
+}
 */
-
-function T(){
-var now = new Date();
-var pib = "";
-var table = document.body.children[3];
-for(var i=1; i<6; i++){
-  var people=table.rows[i].colls[0].innerHTML;
-  pib= people;
-  
-  var DateHuman = table.rows[i].colls[1].innerHTML;
-  var y = ((now-d1)/1000/3600/24/365);
-  var D = table.rows[i].colls[2].innerHTML += y;  
-console.log(pib +" "+ y);
-}
-}
-
 </script>
 <script src="script.js" defer></script>
 <style> 
@@ -42,45 +26,20 @@ td{
 border-spacing: 0;
 border: 2px solid green;
 }
-/*.tabl{
-border-style: none solid;
-border: 0px 2px;
-border-color: #C0392B;
-}
-td{
-width: 80px;
-height: 25px;
-}
-tr:nth-child(3) td{
-border-bottom: 2px solid #C0392B;
-}
-tr:nth-last-child(2n+1) td{
-background:#FDEDEC;
-border-bottom: 1px solid #C0392B;
-}
-tr:nth-child(3){
-background:#FADBD8;
-}
-tr:nth-child(1) {
-background:#C0392B; /*бордовий*/
-font: bold 150% serif;
-color: white;
-}
-td:not(:first-of-type){
-text-align: center;
-}*/
 </style>
  </head>
  <body>
  <h1>Laboratorna robota #3(В6)</h1>
     <div>Таблиця</div>
 	<p>На странице находится набор полей для ввода данных о пяти сотрудниках - фамилии и дата приема на работу. Рассчитать и вывести пользователю средний стаж работы на текущее время, в виде целого числа лет.	</p>
-	<!--  в виде числа месяцев можно. А для особо хитрых, и указыващих дату приёма в виде только лишь года - оценка будет за семестр столь же неконкретна. Она будет. В диапазоне от 0 до 100. -->
-	<table> <!-- class="tabl"-->
+<!--
+ <p> в виде числа месяцев можно. А для особо хитрых, и указыващих дату приёма в виде только лишь года - оценка будет за семестр столь же неконкретна. Она будет. В диапазоне от 0 до 100.</p>
+ -->
+	<table>
 <tr>
     <td>ПІБ</td>
-	<td>Дата прийняття н роботу</td>
-    <td>Стаж роботи(років)</td>
+	<td>Дата прийняття на роботу</td>
+    <td>Стаж роботи</td>
 </tr>
 <tr>
 	<td>Яневич Честислав Борисович</td>
