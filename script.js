@@ -1,10 +1,10 @@
 function T(){
   var now = new Date();
   var pib = "";
-  var table = document.body.children[3];
+  var table = document.body.children[2];
     for(var i=1; i<6; i++){
-		var people=table.rows[i].cells[0].innerHTML;
-		pib= people;
+		var people = table.rows[i].cells[0].innerHTML;
+		pib = people;
 		
 		var DateHuman = new Date(table.rows[i].cells[1].innerHTML);
 		var y = parseInt(((now-DateHuman)/1000/3600/24/365));
@@ -12,6 +12,7 @@ function T(){
 		console.log(pib +" "+ y);
 	}
 }
+//<script src="script.js" defer></script>
 
 /*
 //↓працює
